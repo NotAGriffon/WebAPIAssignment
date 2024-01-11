@@ -6,22 +6,21 @@ var path = require("path");
 
 app.use(express.static(__dirname+'/pages'));
 
-// JavaScript for a route
+// JavaScript for a route (INDEX)
 app.get("/index", function(req, res)
 {
-    // res.send("Here would be the page from the route.");
     res.sendFile(path.join(__dirname+"/pages/index.html"));
 });
 
+// JavaScript for a route (ADDTOLIST)
 app.get("/addToList", function(req, res)
 {
-    // res.send("Here would be the page from the route.");
     res.sendFile(path.join(__dirname+"/pages/addToList.html"));
 });
 
+// JavaScript for a route (LOGIN)
 app.get("/login", function(req, res)
 {
-    // res.send("Here would be the page from the route.");
     res.sendFile(path.join(__dirname+"/pages/login.html"));
 });
 
